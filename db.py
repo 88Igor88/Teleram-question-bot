@@ -7,7 +7,7 @@ from loguru import logger
 class DB:
     @logger.catch
     def __init__(self, DATABASE_FILE):
-        self.engine = create_engine(f"sqlite:////home/igor/PycharmProjects/4semProject/debugger/{DATABASE_FILE}")
+        self.engine = create_engine(f"sqlite:////home/igor/Telegram-question-bot/{DATABASE_FILE}")
         Session = sessionmaker(bind=self.engine)
         self.Base = declarative_base()
         self.s = Session()
