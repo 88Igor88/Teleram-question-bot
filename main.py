@@ -2,8 +2,6 @@ import telebot
 from telebot import types
 from loguru import logger
 import db
-from logtail import LogtailHandler
-logtail_handler = LogtailHandler(source_token="4C7A1Tk3FfmfFADLpWAhNSQC")
 
 logger.remove()
 logger.add("log.log", level="DEBUG", compression='zip', rotation='1 hour', retention='1 week')
