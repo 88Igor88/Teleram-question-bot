@@ -5,7 +5,6 @@ import db
 
 logger.remove()
 logger.add("log.log", level="DEBUG", compression='zip', rotation='1 hour', retention='1 week')
-logger.add(logtail_handler, level="DEBUG")
 
 bot = telebot.TeleBot(token="8042165692:AAGDUaNe9uXyqaVgiW6zb2HjcrXNPaJA9rg")
 logger.success("Экземпляр бота создан")
